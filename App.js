@@ -10,20 +10,12 @@ import React from 'react';
 import {StyleSheet} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Dashboard from './src/screens/Dashboard';
-import SecondScreen from './src/screens/SecondScreen';
+import UserList from './src/screen/UserList';
 
 const Stack = createNativeStackNavigator();
 
 const App = () => {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Dashboard" component={Dashboard} />
-        <Stack.Screen name="SecondScreen" component={SecondScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+  return <UserList />;
 };
 
 const styles = StyleSheet.create({});
